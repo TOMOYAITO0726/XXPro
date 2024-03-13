@@ -12,7 +12,12 @@ namespace CS07
 {
     public partial class Form1 : Form
     {
+        //変数
         private int _count = 0;
+
+        //定数
+        private const int AAA = 10;
+        private const String Key = "SDFSEEWTWRGSD";
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +25,12 @@ namespace CS07
 
         private void button1_Click(object sender, EventArgs e)
         {
+            _count = _count + 1;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(_count.ToString());
         }
     }
 }
